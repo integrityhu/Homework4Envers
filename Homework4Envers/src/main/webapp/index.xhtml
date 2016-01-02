@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/WEB-INF/templates/default.xhtml">
+
+	<ui:define name="content">
+	<a target="_blank" href="http://docs.jboss.org/hibernate/orm/4.2/devguide/en-US/html/ch15.html">dokumentáció</a>
+		<h:form>
+			<h:commandButton action="#{personService.persistFirstVersion()}" value="Test" />
+			<h:commandButton action="#{personService.addAddress()}" value="Test2" />
+		</h:form>
+	</ui:define>
+</ui:composition>
